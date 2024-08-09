@@ -1,0 +1,147 @@
+@import "./variables";
+
+
+.navigation,
+.logo,
+.nav-list,
+.nav-item,
+.contacts-item,
+.contacts-list {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation {
+  margin-right: 318px;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: $font-raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 3%;
+  text-align: left;
+  color: $web-site-logo;
+}
+
+.logo-dark {
+  color: $logo-black;
+}
+
+.logo-white {
+  color: $button-item-color;
+}
+
+.button-item {
+  margin-top: 0px;
+  display: flex;
+}
+
+.nav-list {
+  color: $pages-color;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nav-link {
+  color: $nav-link;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  padding-top: 10px;
+
+  &:hover {
+    color: $web-site-logo;
+    transform: transition(color, $anim-fast);
+  }
+}
+
+.contacts-link {
+  color: $header-comunication;
+  fill: rgba(175, 177, 184, 1);
+  text-decoration: none;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.contacts-link,
+.nav-link,
+.footer-link {
+  font-weight: 500;
+}
+
+.active {
+  color: $link;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: 4px;
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    border-radius: 2px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $link;
+    display: block;
+  }
+}
+
+.under-score:hover::after {
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  top: 76px;
+  border-radius: 2px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $link;
+  display: block;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-img {
+  margin-right: 10px;
+}
+
+.contacts-item:hover .contacts-link {
+  fill: var(--web-site-logo);
+  color: var(--web-site-logo);
+  transform:  transition(color, $anim-fast), fill(var(--anim-fast));
+}
