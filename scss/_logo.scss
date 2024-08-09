@@ -1,0 +1,65 @@
+@import './variables';
+.logo{
+    display: flex;
+}
+
+.logo {
+    margin-right: 93px;
+    font-family: $font-raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    text-align: left;
+    color: $web-site-logo;
+  }
+  
+  .logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    text-align: left;
+    color: $web-site-logo;
+  
+    &-dark {
+      color: $logo-black;
+    }
+  
+    &-white {
+      color: $button-item-color;
+    }
+  }
+  .logo-dark {
+    color: $logo-black;
+  }
+  
+  .logo-white {
+    color: $button-item-color;
+  }
+  
+  .footer-site-logo-web {
+    color: $link;
+    padding-left: 192px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 26px;
+    padding-top: 7px;
+    letter-spacing: 0.03em;
+    line-height: 30.52px;
+  }
+  
+  .footer-studio-web {
+    padding-top: 9px;
+    padding-left: 252px;
+    line-height: 30.52px;
+    color: $white-color;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 28px;
+  }
+  
+
+ 
